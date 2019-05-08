@@ -1,0 +1,336 @@
+/*LOGIN*/
+*{
+	margin: 0;
+	text-decoration: none;
+
+}
+
+
+.fondo{
+	background-color: hsl(0, 0%, 19%);
+}
+
+#Contenedor{
+	background-color: #444;
+	height: 56px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Menu{
+	margin: 8px 16px 0 0;
+}
+
+#button{
+	color: white;
+	background: none;
+	border: none;
+	cursor: pointer;
+
+}
+
+#Logo{
+	margin: 8px 16px 0 0;
+	width: 95%;
+	
+
+}
+
+#Logo a{
+	color: white;
+	text-decoration: none !important;
+	font-weight: bold;
+
+}
+
+.admin{
+	margin: 8px 16px 0 0;
+	width: 110%;
+	color: white;
+
+}
+
+.buttons{
+	margin: 8px 16px 0 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.home{
+	color: white;
+	background: none;
+	border: none;
+	cursor: pointer;
+
+}
+
+#Usuario{
+	display: flex;
+	text-transform: uppercase;
+}
+
+.cuenta{
+	background: none;
+    border: none;
+    outline: none;
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow{
+	background-color: transparent;
+	width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    }
+
+.shadow:hover {
+   height: 40px;
+  }
+
+}
+/*---------------------------------------------------*/
+
+
+.secciones{
+	background-color: #1c1c1c;
+	color: white;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+
+.Contenedor{
+	width: 235px;
+	height: 95vh;
+	background-color: #1c1c1c;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#Header{
+	width: 220px;
+	display: block;
+
+}
+
+.section{
+	margin-top: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 5px 0 0 0;
+}
+
+
+
+.icono:hover{
+	background-color: rgba(40, 40, 40, 0.9);
+}
+
+
+#button2{
+	
+	color: #f61f21;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 25px;
+	
+
+}
+
+
+.icon{
+	margin-left: 25px;
+	margin-right: 35px;
+}
+
+span{
+	color: white;
+	font-size: 20px;
+}
+
+
+.but{
+	color: gray;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+.section2{
+	display: block;
+	margin-top: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 8px 0 ;
+}
+
+.set{
+	margin-left: 25px;
+	color: gray;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+/* Inicio Estilos Menu */
+
+.User{
+  position: fixed;
+  z-index: 998;
+  right: -80%;
+  top: 5%;
+  transition: 0.6s;
+  background-color: rgba(136, 136, 136, 0.4);
+  box-sizing: border-box;
+  width: 300px;
+  height: 20vh;
+  overflow: hidden;
+}
+.header2{
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#avatar{
+	margin-top: 5px;
+	height: 35px;
+    width: 40px;
+    margin-right: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.shadow2{
+	background-color: transparent;
+	width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.name{
+	display: flex;
+	color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    flex-direction: column;
+    
+}
+
+.container{
+	overflow: hidden;
+}
+
+.salir{
+	display: block;
+	margin-top: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 8px 0 ;
+	min-width: 0;
+}
+
+
+/* Fin Estilos Menu */
+
+.BIEN{
+	display: flex;
+	width: 70%;
+	flex-direction: row;
+	margin-left:  20%;
+    margin-top: -40%;
+    color: white;
+}
+
+
+.editar{
+	color: #2b2587;
+}
+
+.Eliminar{
+	color: #f61f21;
+}
+
+
+
+.Mensaje{
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

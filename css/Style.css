@@ -1,0 +1,889 @@
+/*COLORES PRICIPALES
+
+ROJO: f61f21 , 246, 31, 33
+
+AZUL: 2b2587 , 43, 37, 135
+
+FONDO: f0d5b0
+
+*/
+
+* {
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    /* overflow-y: hidden; Sirve para la pagina welcome*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- SCROLLS ------------ */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    padding: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(43, 37, 135, 0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9495d7;
+}
+
+/* ---------- END SCROLLS ------------ */
+
+/* WELCOME SECTION */
+/* END WELCOME SECTION */
+
+/* SECCIONES */
+.Seccion {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  min-height: 620px;
+  float: left;
+}
+
+/* SECTION 1 LEFT */
+.Info {
+  background-color: white;
+}
+
+.Logo {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Title {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  margin-top: 275px;
+  font-size: 3em;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.Title h2 {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.Information {
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  margin-top: 350px;
+  font-size: 13pt;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+.Information p {
+  width: 70%;
+}
+
+.btnSeeMore {
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  margin-top: 560px;
+  display: flex;
+  justify-content: center;
+}
+
+#SeeMore {
+  width: 25%;
+  height: 30px;
+  background-color: white;
+  border: solid 3px rgba(255, 30, 30, 0.8);
+  font-style: italic;
+  font-size: 12pt;
+  text-align: center;
+  line-height: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#SeeMore:hover {
+  transition: 0.5s;
+  font-size: 14pt;
+  box-shadow: 4px 4px 8px 3px gray;
+}
+
+/* Start LightBox Ver mas */
+
+.LightBox {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: -100%;
+  background-color: rgba(0, 0, 0,0.9);
+  z-index: 998;
+  transition: 0.78s;
+}
+
+.TextVerMas {
+  position: relative;
+  z-index: 999;
+  width: 60%;
+  height: 100vh;
+  background-color: white;
+}
+
+.CloseSeeMore {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 1%;
+  right: 1%;
+  font-size: 20pt;
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.TextoLightBox {
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+}
+
+.STF {
+  position: absolute;
+  width: 75%;
+  height: 15vh;
+  background-color: rgba(240, 213, 176, 0.5);
+  left: 12.5%;
+  margin-top: 3vh;
+  color:  #24b4a8;
+  font-size: 45pt;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 15vh;
+}
+
+
+.TitleQueSomos {
+  position: absolute;
+  width: 75%;
+  height: 15vh;
+  margin-top: 18vh;
+  color: white;
+  background-color: rgba(246, 31, 33, 0.7);
+  left: 12.5%;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.InfoQueSomos {
+  position: absolute;
+  width: 70%;
+  height: 55vh;
+  margin-top: 36vh;
+  background-color: rgba(240, 213, 176, 0.05);
+  left: 12.5%;
+  color: black;
+  font-size: 13pt;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 23px;
+}
+
+/* End LightBox Ver mas */
+
+/* SECTION 2 RIGHT*/
+
+
+.Comienzo {
+  background-color: black;
+  overflow: hidden;
+}
+
+.Comienzo a {
+  color: white;
+}
+
+
+.AnimationBack {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../Img/Gifs/Back.gif");
+  background-color: black;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Start Button Menu*/
+.ButtonMenu {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top: 20px;
+  right: 3%;
+  cursor: pointer;
+}
+    /* Tres Principales Lineas */
+  .SpaceLine {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
+    z-index: 999;
+  }
+
+  .SpaceLine:hover {
+    transform: rotate(90deg);
+    z-index: 999;
+  }
+
+  .Lines {
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    margin-left: 5px;
+    transition: 0.5s;
+  }
+
+  .Linea1{
+    margin-top: 10px;
+  }
+
+  .Linea2 {
+    margin-top: 16px;
+  }
+
+  .Linea3 {
+    margin-top: 22px;
+  }
+
+/* End Button Menu */
+
+/* Inicio Estilos Menu */
+
+.LightBoxMenu{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0,0.9);
+  z-index: 998;
+  right: -100%;
+  transition: 0.78s;
+  overflow: hidden;
+}
+
+.Menu {
+  position: absolute;
+  right: 0%;
+  width: 33%;
+  max-width: 500px;
+  height: 100vh;
+  background-color: white;
+  z-index: 998;
+}
+
+.Menu h3 {
+  color: rgba(246, 31, 33, 0.7);
+  font-weight: bold;
+  font-size: 35pt;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+
+.Menu ul li {
+  font-size: 26pt;
+  color: black;
+  line-height: 55px;
+  margin-left: 10%;
+}
+
+.Menu a {
+  color: black;
+  transition: 0.2s;
+}
+
+.Menu a:hover {
+  color: rgba(246, 31, 33, 0.7);
+}
+
+.CloseMenu {
+  font-size: 26pt;
+  color: black;
+  line-height: 50px;
+  margin-top: 45%;
+  margin-left: 10%;
+}
+/* Fin Estilos Menu */
+
+
+/* Start Boton Historia */
+.Historia {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top: 20px;
+  right: 70px;
+  cursor: pointer;
+}
+
+  /* Lineas de boton */
+  .SpaceHistory {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transition: 0.5s;
+    transform: rotate(90deg);
+  }
+
+  .SpaceHistory:hover {
+    transform: rotate(0deg);
+  }
+
+  .LinesH {
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: black;
+    margin-left: 9px;
+    transition: 0.5s;
+  }
+
+  .LinesV {
+    position: absolute;
+    background-color: black;
+    width: 2px;
+    height: 20%;
+  }
+
+  .Linea1H{
+    top: 10px;
+  }
+
+  .Linea1V {
+    top: 10px;
+    right: 12px;
+  }
+
+  .Linea2H {
+    top: 16px
+  }
+
+  .Linea2V {
+    top: 16px;
+    left: 9px;
+  }
+
+  .Linea3H {
+    top: 22px;
+  }
+
+/* End Boton Historia */
+
+/* Start LightBox Historia */
+
+
+.LightBoxHistoria {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0,0.9);
+  z-index: 998;
+  top: -100vh;
+  overflow: hidden;
+  transition: 0.78s;
+}
+
+.TextHistoria {
+  position: relative;
+  z-index: 999;
+  width: 60%;
+  height: 100vh;
+  background-color: white;
+}
+
+.CloseHistoria {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 1%;
+  right: 1%;
+  font-size: 20pt;
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.TextoLightBox {
+  position: absolute;
+  width: 75%;
+  height: 15vh;
+}
+
+.STF {
+  position: absolute;
+  width: 75%;
+  height: 15vh;
+  background-color: white;
+  left: 12.5%;
+  margin-top: 3vh;
+  color: rgba(246, 31, 33, 0.7);
+  font-size: 45pt;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 15vh;
+}
+
+.TitleHistoria {
+  position: absolute;
+  width: 75%;
+  height: 15vh;
+  margin-top: 18vh;
+  color: white;
+  background-color: rgba(246, 31, 33, 0.7);
+  left: 12.5%;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 15vh;
+}
+
+.InfoHistoria {
+  position: absolute;
+  width: 75%;
+  height: 55vh;
+  margin-top: 38vh;
+  background-color: white;
+  left: 12.5%;
+  color: black;
+  font-size: 12pt;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 23px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* End LightBox Historia */
+
+
+
+.Botones {
+  position: absolute;
+  width: 25%;
+  height: 50px;
+  background-color: rgba(88,90,96,0.7);
+  top: 48%;
+  font-size: 12pt;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Botones:hover {
+  box-shadow: 6px 6px 10px 2px black;
+  font-size: 14pt;
+}
+
+.Start {
+  left: 25%;
+}
+
+.Continue {
+  left: 55%;
+}
+
+/* Boton Bajar*/
+
+#Bajar {
+  position: absolute;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(96,98,104,0.3);
+  bottom: 5%;
+  right: 3%;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#Bajar:hover {
+  background-color: rgba(96,98,104,0.6);
+  width: 55px;
+  height: 55px;
+  right: 3%;
+  bottom: 4%;
+  line-height: 55px;
+  box-shadow: 4px 4px 8px 2px black;
+  color: rgba(246, 31, 33, 0.7);
+}
+
+/* END HOME */
+
+
+/* Limpiar FLoats */
+
+.Clean {
+  clear: both;
+}
+
+/* Fin De Limpiart Floats */
+
+
+
+/* START SECTION FATHER CHARACTERS */
+
+.InfoPersonajes {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* SECTION CHARACTER */
+
+/* Start Carrousel */
+#Carrousel {
+  width: 500%;
+  height: 100vh;
+  position: relative;
+  transition: 0.9s;
+}
+
+/* End Carrousel */
+
+
+/* Comienzo Sliders */
+.SliderAaron {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  left: 0%;
+  float: left;
+}
+
+.SliderApril {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  left: 20%;
+  float: left;
+}
+
+.SliderLuke {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  left: 40%;
+  float: left;
+}
+
+.SliderAmelia {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  left: 60%;
+  float: left;
+}
+
+.SliderGiles {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  left: 80%;
+  float: left;
+}
+
+.SliderTheo {
+  position: absolute;
+  width: 20%;
+  height: 100vh;
+  left: 100%;
+  float: left;
+}
+/* Fin De Slider */
+
+
+/* title */
+.TitlePersonajes {
+  position: absolute;
+  width: 35%;
+  height: 60px;
+  background-color: white;
+  border: solid 3px rgba(246, 31, 33, 0.7);
+  margin-left: 10%;
+  margin-top: 6%;
+  font-size: 30pt;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Text */
+.Text {
+  position: absolute;
+  width: 17.5%;
+  height: 350px;
+  background-color: white;
+  padding: 2px;
+  border: 1px solid rgba(246, 31, 33, 0.7);
+  margin-left: 27.5%;
+  margin-top: 11%;
+  font-size: 10pt;
+  text-align: justify;
+  line-height: 25px;
+  font-weight: 300;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Img */
+.ImgPersonaje {
+  position: absolute;
+  width: 17%;
+  height: 350px;
+  background-color: white;
+  margin-left: 10%;
+  margin-top: 11%;
+  border: 1px solid black;
+}
+
+/* Img Personajes */
+
+.AaronIMG {
+  background-image: url("Img/Personajes/Aaron.png");
+  background-size: cover;
+}
+
+.AprilIMG {
+  background-image: url("Img/Personajes/April.png");
+  background-size: cover;
+}
+
+.AmeliaIMG {
+  background-image: url("Img/Personajes/Amelia.png");
+  background-size: cover;
+}
+
+.GilesIMG {
+  background-image: url("Img/Personajes/Giles.png");
+  background-size: cover;
+}
+
+.LukeIMG {
+  background-image: url("Img/Personajes/Luke.png");
+  background-size: cover;
+}
+
+.TheoIMG {
+  background-image: url("Img/Personajes/Theo.png");
+  background-size: cover;
+}
+
+/* END SECTION CHARACTER */
+
+/* SECTION CODE */
+
+.TitleCodigo {
+  position: absolute;
+  width: 35%;
+  height: 60px;
+  background-color: white;
+  border: solid 3px rgba(246, 31, 33, 0.7);
+  right: 10%;
+  margin-top: 6%;
+  font-size: 30pt;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Text */
+
+.Codigo {
+    position: absolute;
+    width: 34.5%;
+    height: 200px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid rgba(246, 31, 33, 0.7);
+    right: 10%;
+    margin-top: 11%;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 11pt;
+    font-weight: 300;
+}
+
+.ImgCodigo {
+  position: absolute;
+  width: 35%;
+  height: 150px;
+  background-color: green;
+  right: 10%;
+  margin-top: 27%;
+  background-image: url("../Img/Codigo/Codigo_RA.png");
+  background-size: cover;
+}
+
+/* END SECTION CODE */
+
+
+/* Flechas */
+
+.Flechas {
+  color: #f61f21;
+  position: absolute;
+  z-index: 997;
+  width: 4%;
+  height: 50px;
+  background-color: white;
+  border: 2px solid rgba(246, 31, 33, 0.7);
+  margin-top: 22%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20pt;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Flechas:hover {
+  background-color: white;
+  border: 3px solid rgba(246, 31, 33, 0.7);
+  box-shadow: 2px 2px 5px 2px rgba(88,90,96,0.3);
+}
+
+  /* izq */
+.Izquierda {
+  left: 1%;
+}
+
+/* Der */
+.Derecha {
+  right: 1%;
+}
+
+/* START FOOTER */
+
+#End {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 30px;
+  transition: 0.5s;
+}
+
+#End a {
+  color: black;
+}
+
+#End a:hover {
+  color: rgba(246, 31, 33, 0.7);
+}
+
+#End:hover {
+  height: 35px;
+}
+
+#Copyright {
+  float: left;
+  width: 50%;
+  height: 23px;
+  font-size: 8pt;
+  line-height: 35px;
+  color: white;
+  cursor: default;
+}
+
+#Copyright p{
+  margin-left: 5%;
+}
+
+#Contact {
+  float: left;
+  width: 50%;
+  height: 23px;
+  font-size: 8pt;
+}
+
+.InFooter {
+  float: right;
+  margin-right: 20px;
+  height: 23px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.InFooter:hover {
+  color: rgba(246, 31, 33, 0.7);
+}
+
+#Contact div {
+  float: right;
+  width: 4%;
+  height: 20px;
+  margin-right: 5px;
+  line-height: 33px;
+  font-size: 12pt;
+}
+
+#Contact div:hover {
+  color: rgba(246, 31, 33, 0.7);
+}
+
+#Gmail {
+  cursor: pointer;
+}
+
+#Instagram {
+  cursor: pointer;
+}
+
+#Facebook {
+  cursor: pointer;
+}
+/* END FOOTER */
+
+/* END SECTION FATHER CHARACTERS */

@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.Header {
+  background-color: #2f3542;
+  color: white;
+}
+
+.Contenidos {
+  background-color: #1c1c1c;
+  color: white;
+  min-height: 90vh;
+}
+
+.Contenidos a{
+  color: white;
+}
+
+.Contenidos a:hover {
+  color: #2f3542;
+  text-decoration: none;
+
+}
+
+.UserImg img {
+  border-radius: 100px;
+}
+
+hr {
+  background-color: white;
+}
+
+.Datos {
+  color: white;
+  background-color: #212529;
+}
+
+.MiniMenu {
+  width: 300px;
+  height: 24vh;
+  background-color: rgba(136, 136, 136, 0.8);
+  z-index: 99;
+  position: absolute;
+  top: 12vh;
+  right: -300px;
+  transition: 0.4s;
+}
+
+.MiniMenu img {
+  border-radius: 100px;
+}
+
+.MiniMenu hr {
+  background-color: white;
+  width: 100%;
+}
+
+.Out {
+
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+.Out a {
+  color: white;
+}
+
+.Out a:hover{
+  text-decoration: none;
+}
+
+.Out:hover {
+  background-color: #1c1c1c;
+}
